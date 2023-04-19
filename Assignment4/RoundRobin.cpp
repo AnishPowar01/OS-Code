@@ -32,12 +32,12 @@ int main()
     int n, index;
 
     queue<int> q;
-    bool visited[100] = {false}, is_first_process = true;
+    bool visited[100] = {false};
     int current_time = 0;
     int completed = 0, tq;
     cout << "Enter total number of processes: ";
     cin >> n;
-    float sum_tat = 0, sum_wt = 0, sum_rt = 0;
+    float sum_tat = 0, sum_wt = 0;
 
     for (int i = 0; i < n; i++)
     {
