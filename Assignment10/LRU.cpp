@@ -117,8 +117,7 @@ int main()
                     isOverflow = true;
                 }
             }
-        }
-        else
+            else
         {
             int LRU_index;
             serachLRUIndex(PT, frame, no_of_frames, &LRU_index);
@@ -130,6 +129,8 @@ int main()
             updateFrame(PT, reference_string[i], LRU_index, 1, i);
         }
 
+        }
+        
         PT[reference_string[i]].last_access_time = i;
     }
 
